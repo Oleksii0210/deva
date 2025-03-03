@@ -1,11 +1,8 @@
-@font-face {
-  font-family: "e-Ukraine";
-  src: url("./fons/e-Ukraine-light.otf");
-  
+.GruntGroteskLight {
+  font-family: GruntGroteskLight;
 }
-@font-face {
-  font-family: GruntGrotesk-Light;
-  src: url("./fons/GruntGrotesk-Light.otf");
+.GruntGroteskBold {
+  font-family: GruntGroteskBold;
 }
 
 .logo,
@@ -30,11 +27,11 @@ body {
   color: #df510a9e;
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   body {
-  cursor: context-menu;
+    cursor: context-menu;
   }
-  }
+}
 
 h1,
 h2,
@@ -86,7 +83,6 @@ img {
 }
 
 .address-item {
-  
   line-height: 19.19px;
   letter-spacing: 0%;
   color: #6e0012;
@@ -99,7 +95,7 @@ img {
   font-family: "e-Ukraine";
   font-weight: 100;
   font-size: 16px;
-  color: #6E0012;
+  color: #6e0012;
   top: 28px;
   left: 788px;
   border-radius: 40px;
@@ -150,7 +146,6 @@ img {
   left: 80px;
   gap: 0px;
   opacity: 0px;
-  
 }
 
 .input {
@@ -158,7 +153,6 @@ img {
 }
 .form-section {
   border-color: #6e0012;
-  
 }
 
 .form-button {
@@ -201,11 +195,11 @@ img {
   padding-left: 14px;
   border: 1px solid #6e0012;
   background-color: transparent;
-  }
+}
 
-  .up-orange {
-    display: inline-flex;
-    width: 740px;
-    height: 356px;
-    }
+.up-orange {
+  display: inline-flex;
+  width: 740px;
+  height: 356px;
+}
 /*footer*/
