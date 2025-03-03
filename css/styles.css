@@ -1,8 +1,12 @@
-.GruntGroteskLight {
-  font-family: GruntGroteskLight;
+@font-face {
+  font-family: "GruntGroteskBold";
+  src: url("webFonts/GruntGroteskBold/font.woff2") format("woff2"),
+    url("webFonts/GruntGroteskBold/font.woff") format("woff");
 }
-.GruntGroteskBold {
-  font-family: GruntGroteskBold;
+@font-face {
+  font-family: "GruntGroteskLight";
+  src: url("webFonts/GruntGroteskLight/font.woff2") format("woff2"),
+    url("webFonts/GruntGroteskLight/font.woff") format("woff");
 }
 
 .logo,
