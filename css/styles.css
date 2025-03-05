@@ -56,8 +56,6 @@ img {
 
 .container {
   width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -79,7 +77,7 @@ img {
   line-height: 19.19px;
   letter-spacing: 0%;
   color: #6e0012;
-  margin-left: 350px;
+  margin-left: 470px;
 }
 
 .address-link-button {
@@ -89,8 +87,6 @@ img {
   font-weight: 100;
   font-size: 16px;
   color: #6e0012;
-  top: 28px;
-  left: 788px;
   border-radius: 40px;
   padding-top: 12px;
   padding-right: 24px;
@@ -98,6 +94,7 @@ img {
   padding-left: 24px;
   border: 1px solid #6e0012;
   background-color: transparent;
+  margin: 10px;
 }
 
 .address-link-button:hover,
@@ -108,7 +105,6 @@ img {
 /*section-one*/
 .section-one-fon {
   text-align: center;
-  padding: 104px 0;
 }
 
 .section-one-title {
@@ -119,6 +115,7 @@ img {
   text-align: left;
   color: #910c0c;
   width: 1012px;
+  padding-top: 104px;
 }
 
 .section-one-p {
@@ -136,11 +133,12 @@ img {
   font-family: inherit;
 }
 .form-section {
+  position: absolute;
   border-color: #6e0012;
+  margin-left: 750px;
 }
 
 .form-button {
-  display: flex;
   font-family: "e-Ukraine-Thin", serif;
   cursor: pointer;
   width: 360px;
@@ -150,6 +148,7 @@ img {
   padding-right: 24px;
   padding-bottom: 12px;
   padding-left: 24px;
+  border: 1px solid #6e0012;
   background-color: #6e0012;
   color: #f4d598;
 }
@@ -161,7 +160,7 @@ img {
   margin: 20px;
   border-radius: 40px;
   padding-top: 10px;
-  padding-right: 260px;
+  padding-right: auto;
   padding-bottom: 10px;
   padding-left: 14px;
   border: 1px solid #6e0012;
@@ -175,7 +174,7 @@ img {
   margin: 20px;
   border-radius: 40px;
   padding-top: 10px;
-  padding-right: 260px;
+  padding-right: auto;
   padding-bottom: 10px;
   padding-left: 14px;
   border: 1px solid #6e0012;
@@ -183,7 +182,7 @@ img {
 }
 
 .up-orange {
-  display: inline-flex;
+  position: absolute;
   width: 740px;
   height: 356px;
 }
