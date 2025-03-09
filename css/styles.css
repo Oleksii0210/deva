@@ -20,10 +20,22 @@ body {
   color: #df510a9e;
 }
 
-@media (max-width: 500px) {
-  body {
-    cursor: context-menu;
+@media (max-width: 300px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
+  .section-one-title {
+    font-family: "GruntGroteskLight", serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 128%;
+    text-align: left;
+    color: #910c0c;
+   
+    
+  }
+
 }
 
 h1,
@@ -59,14 +71,14 @@ img {
   padding-left: 80px;
   padding-right: 80px;
 }
-
+/*
 .page-navigation {
   display: flex;
   align-items: center;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-}
+}*/
 
 .logo {
   width: 265px;
