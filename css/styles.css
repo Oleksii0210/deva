@@ -19,52 +19,18 @@ body {
   background-color: #f4d598;
   color: #df510a9e;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-/*==========================mobile======================*/
-@media screen and (max-width: 500px) {
-=======
 
-@media (max-width: 300px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .section-one-title {
-    font-family: "GruntGroteskLight", serif;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 128%;
-    text-align: left;
-    color: #910c0c;
-   
-    
-  }
-
->>>>>>> fb60c83af6919a92b9720a12d247dfe8a23c33f9
-}
 /*=====================desctop==========================*/
-@media screen and (max-width: 1280px) {
-=======
 
-@media (max-width: 300px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .section-one-title {
-    font-family: "GruntGroteskLight", serif;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 128%;
-    text-align: left;
-    color: #910c0c;
-   
-    
-  }
-
->>>>>>> fb60c83af6919a92b9720a12d247dfe8a23c33f9
+.section-one-title {
+  font-family: "GruntGroteskLight", serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 128%;
+  text-align: left;
+  color: #910c0c;
 }
+
 h1,
 h2,
 h3,
@@ -106,6 +72,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
 }*/
+/*==========================mobile======================*/
 
 .logo {
   width: 265px;
@@ -157,6 +124,22 @@ img {
   padding-top: 104px;
 }
 
+@media screen and (max-width: 320px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-one-title {
+    font-family: "GruntGroteskLight", serif;
+    font-size: 24px;
+    font-weight: 300;
+    width: 280px;
+    line-height: 128%;
+    text-align: left;
+    color: #910c0c;
+  }
+}
+
 .section-one-p {
   font-family: "e-Ukraine-Thin", serif;
   font-size: 28px;
@@ -168,6 +151,17 @@ img {
   padding-top: 32px;
 }
 
+@media screen and (max-width: 320px) {
+  .section-one-p {
+    font-family: "e-Ukraine-Thin", serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #910c0c;
+    width: 230px;
+  }
+}
 .input {
   font-family: inherit;
 }
