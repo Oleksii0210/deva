@@ -20,8 +20,28 @@ body {
   color: #df510a9e;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*==========================mobile======================*/
 @media screen and (max-width: 500px) {
+=======
+
+@media (max-width: 300px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-one-title {
+    font-family: "GruntGroteskLight", serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 128%;
+    text-align: left;
+    color: #910c0c;
+   
+    
+  }
+
+>>>>>>> fb60c83af6919a92b9720a12d247dfe8a23c33f9
 }
 /*=====================desctop==========================*/
 @media screen and (max-width: 1280px) {
