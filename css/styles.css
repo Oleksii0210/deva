@@ -19,13 +19,32 @@ body {
   background-color: #f4d598;
   color: #df510a9e;
 }
-
-@media (max-width: 500px) {
-  body {
-    cursor: context-menu;
-  }
+<<<<<<< HEAD
+/*==========================mobile======================*/
+@media screen and (max-width: 500px) {
 }
+/*=====================desctop==========================*/
+@media screen and (max-width: 1280px) {
+=======
 
+@media (max-width: 300px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-one-title {
+    font-family: "GruntGroteskLight", serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 128%;
+    text-align: left;
+    color: #910c0c;
+   
+    
+  }
+
+>>>>>>> fb60c83af6919a92b9720a12d247dfe8a23c33f9
+}
 h1,
 h2,
 h3,
@@ -59,14 +78,14 @@ img {
   padding-left: 80px;
   padding-right: 80px;
 }
-
+/*
 .page-navigation {
   display: flex;
   align-items: center;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-}
+}*/
 
 .logo {
   width: 265px;
