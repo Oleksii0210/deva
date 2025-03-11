@@ -6,29 +6,17 @@
 .logo,
 .studio,
 .link,
+.list,
 .footer-fon-link {
+  text-decoration: none;
+}
+
+a {
   text-decoration: none;
 }
 
 .list {
   list-style-type: none;
-}
-
-body {
-  font-family: "e-Ukraine-Thin", serif;
-  background-color: #f4d598;
-  color: #df510a9e;
-}
-
-/*=====================desctop==========================*/
-
-.section-one-title {
-  font-family: "GruntGroteskLight", serif;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 128%;
-  text-align: left;
-  color: #910c0c;
 }
 
 h1,
@@ -51,84 +39,85 @@ img {
   display: block;
 }
 
-/*menu*/
-.header-container {
-  display: flex;
-  width: 1280px;
-  align-items: center;
-  padding-top: 32px;
+button {
+  cursor: pointer;
 }
+/*=====================================================*/
 
 .container {
-  width: 1280px;
-  padding-left: 80px;
-  padding-right: 80px;
-}
-/*
-.page-navigation {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
-}*/
-/*==========================mobile======================*/
-
-.logo {
-  width: 265px;
-  height: 99px;
+  max-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.address-item {
-  line-height: 19.19px;
-  letter-spacing: 0%;
-  color: #6e0012;
-  margin-left: 470px;
-}
-
-.address-link-button {
-  display: inline-block;
-  cursor: pointer;
-  font-family: "e-Ukraine-Thin";
-  font-weight: 100;
-  font-size: 16px;
-  color: #6e0012;
-  border-radius: 40px;
-  padding-top: 12px;
-  padding-right: 24px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-  border: 1px solid #6e0012;
-  background-color: transparent;
-  margin: 10px;
-}
-
-.address-link-button:hover,
-.address-link-button:focus {
-  background-color: #7b2e3b;
-}
-
-/*section-one*/
-.section-one-fon {
-  text-align: center;
-}
-
-.section-one-title {
-  font-family: "GruntGroteskLight", serif;
-  font-size: 64px;
-  font-weight: 300;
-  line-height: 81.92px;
-  text-align: left;
-  color: #910c0c;
-  width: 1012px;
-  padding-top: 104px;
-}
-
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 768px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 768px;
   }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+body {
+  font-family: "e-Ukraine-Thin", serif;
+  background-color: #f4d598;
+  color: #df510a9e;
+}
+/*=====================mobile==========================*/
+@media screen and (max-width: 767px) {
+  /*===========menu==============================*/
+  .header-container {
+    display: flex;
+    width: 1280px;
+    align-items: center;
+    padding-top: 32px;
+  }
+
+  .logo {
+    width: 265px;
+    height: 99px;
+  }
+
+  .address-item {
+    text-align: center;
+    color: #6e0012;
+    margin-left: 60px;
+  }
+
+  .address-link {
+    display: flexbox;
+    flex-direction: column;
+    cursor: pointer;
+    font-family: "e-Ukraine-Thin";
+    font-weight: 100;
+    font-size: 16px;
+    color: #6e0012;
+    border-radius: 40px;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #6e0012;
+    background-color: transparent;
+    margin: 10px;
+  }
+  .address-link-button {
+    display: none;
+  }
+
+  .address-link-button:hover,
+  .address-link-button:focus {
+    background-color: #7b2e3b;
+  }
+
+  /*=================section-one=========================*/
+  .section-one-fon {
+    text-align: center;
+  }
+
   .section-one-title {
     font-family: "GruntGroteskLight", serif;
     font-size: 24px;
@@ -137,21 +126,9 @@ img {
     line-height: 128%;
     text-align: left;
     color: #910c0c;
+    padding-top: 80px;
   }
-}
 
-.section-one-p {
-  font-family: "e-Ukraine-Thin", serif;
-  font-size: 28px;
-  font-weight: 100;
-  line-height: 33.6px;
-  text-align: left;
-  color: #910c0c;
-  width: 665px;
-  padding-top: 32px;
-}
-
-@media screen and (max-width: 320px) {
   .section-one-p {
     font-family: "e-Ukraine-Thin", serif;
     font-size: 16px;
@@ -160,63 +137,208 @@ img {
     letter-spacing: 0%;
     color: #910c0c;
     width: 230px;
+    padding-top: 20px;
+    padding-bottom: 32px;
+  }
+
+  .input {
+    font-family: inherit;
+  }
+  .form-section {
+    position: absolute;
+    border-color: #6e0012;
+  }
+
+  .form-button {
+    font-family: "e-Ukraine-Thin", serif;
+    font-size: 14px;
+    cursor: pointer;
+    width: 280px;
+    align-items: center;
+    border-radius: 40px;
+    padding: 12px 108px 12px 108px;
+    border: 1px solid #6e0012;
+    background-color: #6e0012;
+    color: #f4d598;
+  }
+
+  .form-input {
+    display: flex;
+    width: 280px;
+    height: 33px;
+    margin: 12px;
+    border-radius: 40px;
+    padding-top: 8px;
+    padding-right: auto;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    border: 1px solid #6e0012;
+    background-color: transparent;
+  }
+
+  .form-input-comment {
+    display: flex;
+    width: 280px;
+    height: 33px;
+    margin: 12px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-right: auto;
+    padding-bottom: 90px;
+    padding-left: 14px;
+    border: 1px solid #6e0012;
+    background-color: transparent;
+  }
+
+  .up-orange {
+    position: absolute;
+    width: 740px;
+    height: 356px;
+  }
+  /*footer*/
+}
+/*=====================TABLET==========================*/
+@media screen and (min-width: 768px) {
+  /*===========menu======*/
+  .header-container {
+    display: flex;
+
+    width: 1280px;
+    align-items: center;
+    padding-top: 32px;
+  }
+
+  .logo {
+    width: 265px;
+    height: 99px;
+  }
+
+  .address-item {
+    display: flex;
+    line-height: 19.19px;
+    letter-spacing: 0%;
+    color: #6e0012;
+    margin-left: 470px;
+  }
+
+  .address-link,
+  .address-link-button {
+    display: flex;
+    cursor: pointer;
+    font-family: "e-Ukraine-Thin";
+    font-weight: 100;
+    font-size: 16px;
+    color: #6e0012;
+    border-radius: 40px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    border: 1px solid #6e0012;
+    background-color: transparent;
+    margin: 10px;
+  }
+
+  .address-link-button:hover,
+  .address-link-button:focus {
+    background-color: #7b2e3b;
+  }
+
+  /*=================section-one=========================*/
+  .section-one-fon {
+    text-align: center;
+  }
+
+  .section-one-title {
+    font-family: "GruntGroteskLight", serif;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 81.92px;
+    text-align: left;
+    color: #910c0c;
+    width: 1012px;
+    padding-top: 104px;
+  }
+
+  .section-one-p {
+    font-family: "e-Ukraine-Thin", serif;
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 33.6px;
+    text-align: left;
+    color: #910c0c;
+    width: 665px;
+    padding-top: 32px;
+  }
+
+  .input {
+    font-family: inherit;
+  }
+  .form-section {
+    position: absolute;
+    border-color: #6e0012;
+    margin-left: 750px;
+  }
+
+  .form-button {
+    font-family: "e-Ukraine-Thin", serif;
+    cursor: pointer;
+    width: 360px;
+    align-items: center;
+    border-radius: 40px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    border: 1px solid #6e0012;
+    background-color: #6e0012;
+    color: #f4d598;
+  }
+
+  .form-input {
+    display: flex;
+    width: 360px;
+    height: 44px;
+    margin: 20px;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-right: auto;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    border: 1px solid #6e0012;
+    background-color: transparent;
+  }
+
+  .form-input-comment {
+    display: flex;
+    width: 360px;
+    height: 134px;
+    margin: 20px;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-right: auto;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    border: 1px solid #6e0012;
+    background-color: transparent;
+  }
+
+  .up-orange {
+    display: flex;
+    position: absolute;
+    width: 740px;
+    height: 356px;
+  }
+  /*footer*/
+}
+
+/*=====================NO DESKTOP==========================*/
+@media screen and (max-width: 1157px) {
+  .up-orange {
+    display: none;
   }
 }
-.input {
-  font-family: inherit;
-}
-.form-section {
-  position: absolute;
-  border-color: #6e0012;
-  margin-left: 750px;
-}
 
-.form-button {
-  font-family: "e-Ukraine-Thin", serif;
-  cursor: pointer;
-  width: 360px;
-  align-items: center;
-  border-radius: 40px;
-  padding-top: 12px;
-  padding-right: 24px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-  border: 1px solid #6e0012;
-  background-color: #6e0012;
-  color: #f4d598;
+/*=====================DESKTOP==========================*/
+@media screen and (min-width: 1158px) {
 }
-
-.form-input {
-  display: flex;
-  width: 360px;
-  height: 44px;
-  margin: 20px;
-  border-radius: 40px;
-  padding-top: 10px;
-  padding-right: auto;
-  padding-bottom: 10px;
-  padding-left: 14px;
-  border: 1px solid #6e0012;
-  background-color: transparent;
-}
-
-.form-input-comment {
-  display: flex;
-  width: 360px;
-  height: 134px;
-  margin: 20px;
-  border-radius: 40px;
-  padding-top: 10px;
-  padding-right: auto;
-  padding-bottom: 10px;
-  padding-left: 14px;
-  border: 1px solid #6e0012;
-  background-color: transparent;
-}
-
-.up-orange {
-  position: absolute;
-  width: 740px;
-  height: 356px;
-}
-/*footer*/
