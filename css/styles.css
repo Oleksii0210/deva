@@ -327,6 +327,9 @@ body {
     margin: 65px 0;
   }
   /*footer*/
+  .form-claim {
+    margin-left: 10px;
+  }
 }
 
 /*=====================NO DESKTOP==========================*/
