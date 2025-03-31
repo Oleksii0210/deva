@@ -67,7 +67,7 @@ button {
 body {
   font-family: "e-Ukraine-Thin", serif;
   background-color: #f4d598;
-  color: #df510a9e;
+  color: #6e0012;
 }
 /*=====================mobile==========================*/
 @media screen and (max-width: 767px) {
@@ -89,26 +89,39 @@ body {
     margin-left: 60px;
   }
 */
-  .address-link {
-    display: block;
-    cursor: pointer;
-    font-family: "e-Ukraine-Thin";
+  .tel-col {
+    color: #6e0012;
+  }
+
+  .address-link,
+  .address-link-button {
+    font-family: "e-Ukraine-Thin", serif;
     font-weight: 100;
     font-size: 16px;
     color: #6e0012;
     border-radius: 40px;
-    padding: 8px 16px 8px 16px;
+    padding: 10px 20px 10px 20px;
     border: 1px solid #6e0012;
     background-color: transparent;
-    margin: 20px;
+    margin: 10px;
   }
-  .address-link-button {
+
+  .address-link {
     display: none;
   }
 
+  .address-link:hover,
   .address-link-button:hover,
-  .address-link-button:focus {
+  .tel-col:hover {
+    cursor: pointer;
     background-color: #7b2e3b;
+    color: #f4d598;
+  }
+
+  .address-link:active,
+  .address-link-button:active,
+  .tel-col:active {
+    background-color: #e2471f;
   }
 
   /*=================section-one=========================*/
@@ -211,18 +224,20 @@ body {
   }
 
   .address-item {
-    display: block;
+    display: flex;
     flex-wrap: wrap;
     text-align: center;
     line-height: 19.19px;
     letter-spacing: 0%;
-    color: #6e0012;
     margin-left: 470px;
+  }
+
+  .tel-col {
+    color: #6e0012;
   }
 
   .address-link,
   .address-link-button {
-    cursor: pointer;
     font-family: "e-Ukraine-Thin", serif;
     font-weight: 100;
     font-size: 16px;
@@ -234,9 +249,18 @@ body {
     margin: 10px;
   }
 
+  .address-link:hover,
   .address-link-button:hover,
-  .address-link-button:focus {
+  .tel-col:hover {
+    cursor: pointer;
     background-color: #7b2e3b;
+    color: #f4d598;
+  }
+
+  .address-link:active,
+  .address-link-button:active,
+  .tel-col:active {
+    background-color: #e2471f;
   }
 
   /*=================section-one=========================*/
